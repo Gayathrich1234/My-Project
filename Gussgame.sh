@@ -1,25 +1,25 @@
-#coded by Gayathri
 
-function guesscheck{
-        echo "Kindly guess the number of files in the current directory:"
-        read guess
-        files=$(ls -l | wc - l)
+
+function gcheck{
+        echo "guess number of files:"
+        read count
+      num file =$(ls -l | wc - l)
 }
 
-echo "Cordially inviting you to the Guessing Game"
+echo "Welcome to the Game"
 
-guesscheck
+gcheck
 
-while [[ $guess  -ne $files ]]
+while [[ $count  -ne $num file ]]
 do
-      if [[$guess -lt $files ]]
+      if [[$count -gt $num files ]]
       then
-             echo "We are sorry.Your guess is too low "
+             echo " sorry.Your guess is high "
      else        
-            echo "We are sorry. Your guess is too high."
+            echo "sorry. Your guess is small."
      fi
-     guesscheck
+     gcheck
 done
 
-echo "Congratulation!!! It  is the correct answer."
+echo " correct answer."
 echo "Thank you for Participation !!!"
