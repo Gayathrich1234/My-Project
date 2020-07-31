@@ -1,7 +1,3 @@
-
-
-
-
 function gcheck{
         echo "guess number of files:"
         read count
